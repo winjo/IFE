@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-cmn">
+<head>
+	<meta charset="UTF-8">
+	<title>task-23</title>
+	<style>
+		div:not(.btn) {
+			border: 1px solid #000;
+			background-color: #fff;
+			font-size: 10px;
+		}
+		span {
+			align-self: flex-start;
+		}
+		.first {
+			width: 1000px;
+			height: 150px;
+			display: inline-flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.second {
+			height: 100px;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.third {
+			height: 80px;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.fourth {
+			height: 60px;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.fifth {
+			height: 30px;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.second:first-of-type {
+			width: 400px;
+		}		
+		.second:first-of-type .third:first-of-type {
+			width: 170px;
+		}
+		.second:first-of-type .third:nth-of-type(2) {
+			width: 80px;
+		}
+		.second:first-of-type .third:last-of-type {
+			width: 100px;
+		}
+		.second:first-of-type .third:first-of-type .fourth:nth-of-type(odd) {
+			width: 25px;
+		}
+		.second:first-of-type .third:first-of-type .fourth:nth-of-type(2) {
+			width: 20px;
+		}
+		.second:first-of-type .third:first-of-type .fourth:last-of-type {
+			width: 34px;
+		}
+		.second:first-of-type .third:last-of-type .fourth:first-of-type {
+			width: 36px;
+		}
+		.second:first-of-type .third:last-of-type .fourth:last-of-type {
+			width: 40px;
+		}
+
+		.second:nth-of-type(2) {
+			width: 400px;
+		}
+		.second:nth-of-type(2) .third {
+			width: 180px;
+		}
+		.second:nth-of-type(2) .third:first-of-type .fourth:nth-of-type(odd) {
+			width: 36px;
+		}
+		.second:nth-of-type(2) .third:first-of-type .fourth:nth-of-type(even) {
+			width: 45px;
+		}
+		.second:nth-of-type(2) .third:last-of-type .fourth:first-of-type {
+			width: 75px;
+		}
+		.second:nth-of-type(2) .third:last-of-type .fourth:last-of-type {
+			width: 36px;
+		}
+		.second:nth-of-type(2) .third:last-of-type .fourth:first-of-type .fifth:first-of-type {
+			width: 26px;
+		}
+		.second:last-of-type {
+			width: 150px;
+		}
+
+		form {
+			margin: 20px 100px;
+		}
+		form button {
+			margin-right: 50px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="first">
+		<span>Super</span>
+		<div class="second">
+			<span>Can</span>
+			<div class="third">
+				<span>Apple</span>
+				<div class="fourth"><span>Pear</span></div>
+				<div class="fourth"><span>Pig</span></div>
+				<div class="fourth"><span>Cola</span></div>
+				<div class="fourth"><span>Soccer</span></div>
+			</div>
+			<div class="third">
+				<span>Phone</span>
+			</div>
+			<div class="third">
+				<div class="fourth"><span>Book</span></div>
+				<div class="fourth"><span>School</span></div>
+			</div>
+		</div>
+		<div class="second">
+			<span>Note</span>
+			<div class="third">
+				<span>Human</span>
+				<div class="fourth"><span>Code</span></div>
+				<div class="fourth"><span>Operate</span></div>
+				<div class="fourth"><span>Man</span></div>
+			</div>
+			<div class="third">
+				<span>Program</span>
+				<div class="fourth">
+					<span>Element</span>
+					<div class="fifth"><span>Cat</span></div>
+				</div>
+				<div class="fourth"><span>Glass</span></div>
+			</div>
+		</div>
+		<div class="second"><span>Fish</span></div>
+	</div>
+	
+	<form action="#">
+		<button id="pre">前序遍历（递归法）</button>
+		<button id="post">后序遍历（深度优先）</button>
+		<button id="bf">层次遍历（广度优先）</button>
+		<input id="text" type="text">
+		<button id="search">查找</button>
+	</form>
+	
+
+	<script src="tree.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>

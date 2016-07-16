@@ -1,0 +1,99 @@
+#universe {
+	position: relative;
+	float: left;
+	width: 550px;
+	height: 420px;
+	background-color: black;
+}
+#planet {
+	position: absolute;
+	left: 85px;
+	top: 85px;
+	width: 170px;
+	height: 170px;
+	border-radius: 50%;
+	background-color: #00f;
+}
+.airship {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	width: 80px;
+	height: 28px;
+	border-radius: 14px / 50%;
+	background-color: #999;
+	font-size: 12px;
+	line-height: 28px;
+	text-align: center;
+	overflow: hidden;
+}
+/*#airship1 {
+	transform: matrix(.866,.5,-.5,.866,100,-173);
+}
+#airship2 {
+	transform: matrix(-.707,-.707,.707,-.707,-141,141);
+}*/
+.fuel {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #00f;
+}
+
+#monitor {
+	float: left;
+	width: 510px;
+	height: 430px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	border: 1px solid #999;
+}
+#table-container {
+	width: 500px;
+	height: 380px;
+	margin: 20px;
+	overflow: auto;
+}
+#table-container table,
+#table-container th,
+#table-container td {
+	border: 1px solid #ccc;
+}
+#table-container table {
+	width: 480px;
+	text-align: left;
+	font-size: 14px;
+	line-height: 20px;
+	border-collapse: collapse;
+}
+#table-container th {
+	background-color: #ccc;
+}
+
+#createAirship,
+#conduct {
+	width: 1100px;
+	padding-left: 10px; 	
+	border: 2px inset #787878;
+	font-size: 12px;
+}
+#createAirship {
+	clear: left;
+	padding-bottom: 10px; 
+	margin-top: 15px;
+}
+
+input {
+	font-size: 10px;
+	vertical-align: middle;
+}
+input[type="radio"] {
+	vertical-align: middle;
+	margin-top: -2px;
+}

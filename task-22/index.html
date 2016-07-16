@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-cmn">
+<head>
+	<meta charset="UTF-8">
+	<title>task-22</title>
+	<style>
+		div {
+			border: 1px solid #000;
+			background-color: #fff;
+		}
+		.first {
+			width: 390px;
+			height: 100px;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.second {
+			width: 185px;
+			height: 75px;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.third {
+			width: 85px;
+			height: 45px;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.fourth {
+			width: 35px;
+			height: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="first">
+		<div class="second">
+			<div class="third">
+				<div class="fourth"></div>
+				<div class="fourth"></div>
+			</div>
+			<div class="third">
+				<div class="fourth"></div>
+				<div class="fourth"></div>
+			</div>
+		</div>
+		<div class="second">
+			<div class="third">
+				<div class="fourth"></div>
+				<div class="fourth"></div>
+			</div>
+			<div class="third">
+				<div class="fourth"></div>
+				<div class="fourth"></div>
+			</div>
+		</div>
+	</div>
+	<button id="dlr">前序遍历</button>
+	<button id="ldr">中序遍历</button>
+	<button id="lrd">后序遍历</button>
+
+	<script src="tree.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>

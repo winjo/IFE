@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-cmn">
+<head>
+	<meta charset="UTF-8">
+	<title>task-10</title>
+	<style>
+		.flex-container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.flex-container div {
+			width: 150px;
+			padding: 20px;
+			margin-top: 20px;
+			border: 1px solid #f00;
+		}
+		.flex-container div:nth-child(1) {
+			height: 120px;
+		}
+		.flex-container div:nth-child(2) {
+			height: 100px;
+		}
+		.flex-container div:nth-child(3) {
+			height: 40px;
+		}
+		.flex-container div:nth-child(4) {
+			height: 200px;
+			border-color: #00f;
+		}
+		@media (max-width: 640px) {
+			.flex-container {
+				justify-content: space-between;
+				align-items: flex-start;
+				flex-wrap: wrap;
+			}
+			.flex-container div:nth-child(4) {
+				order: -1;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="flex-container">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+</body>
+</html>

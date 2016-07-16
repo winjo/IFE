@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-cmn">
+<head>
+	<meta charset="UTF-8">
+	<title>task-28</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div id="universe">
+		<div id="planet">
+			<!-- <div id="airship1" class="airship">
+				<div class="fuel"></div>
+				<span>1号-</span><span class="percent">84</span><span>%</span>
+			</div>
+			<div id="airship2" class="airship">
+				<div class="fuel"></div>
+				<span>2号-</span><span class="percent">35</span><span>%</span>
+			</div> -->
+		</div>	
+	</div>
+	<div id="monitor">
+		<div id="table-container">
+			<table>
+				<thead>
+					<tr>
+						<th>飞船</th>
+						<th>动力系统</th>
+						<th>能源系统</th>
+						<th>当前飞行状态</th>
+						<th>剩余能耗</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</div>
+	</div>
+	<div id="createAirship">
+		<div id="power">
+			<span>动力系统选择：</span>
+			<label><input type="radio" name="power" value="30/5">前进号（速率30px/s，能耗5%/s）</label>
+			<label><input type="radio" name="power" value="50/7">奔腾号（速率50px/s，能耗7%/s）</label>
+			<label><input type="radio" name="power" value="80/9" checked="checked">超越号（速率80px/s，能耗9%/s）</label>
+		</div>
+		<div id="energy">
+			<span>能源系统选择：</span>
+			<label><input type="radio" name="energy" value="2">劲量型（补充能源速率2%/s）</label>
+			<label><input type="radio" name="energy" value="3">光能型（补充能源速率3%/s）</label>
+			<label><input type="radio" name="energy" value="4" checked="checked">永久型（补充能源速率4%/s）</label>
+		</div>
+		<input type="button" value="创建新飞船" id="create">
+	</div>
+	<div id="conduct">
+		<div id="1">
+			<span>对1号飞船下达命令：</span>
+			<input type="button" value="开始飞行" class="fly">
+			<input type="button" value="停止飞行" class="stop">
+			<input type="button" value="销毁" class="destroy">
+		</div>
+		<div id="2">
+			<span>对2号飞船下达命令：</span>
+			<input type="button" value="开始飞行" class="fly">
+			<input type="button" value="停止飞行" class="stop">
+			<input type="button" value="销毁" class="destroy">
+		</div>	
+	</div>
+
+	<script src="main.js"></script>
+</body>
+</html>

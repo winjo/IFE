@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-cmn">
+<head>
+	<meta charset="UTF-8">
+	<title>task-36</title>
+	<style>
+		body {
+			margin: 0;
+		}
+		#map {
+			float: left;
+		}
+		#conduct {
+			clear: both;
+			margin-left: 30px;
+		}
+		input[type="button"],
+		select {
+			height: 20px;
+			line-height: 20px;
+			font-size: 12px;
+			border: 1px solid #e4e4e4;
+			border-radius: 3px;
+		}
+		textarea {
+			width: 430px;
+			height: 100px;
+			padding: 0 0 0 5px; 
+			margin: 0 22px; 
+			border: none;
+			background-color: black;
+			color: #176019;
+			font: 600 15px/20px Arial, sans-serif;
+			vertical-align: middle;
+		}
+		#command-zone {
+			position: relative;
+			margin-top: 5px;
+			overflow: hidden;
+		}
+		#row-count {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 22px;
+			min-height: 100%;
+			background-color: #ccc;
+			color: white;
+			text-align: center;
+			font-size: 15px;
+			line-height: 20px;
+		}
+		#row-count span {
+			display: block;
+		}
+		#row-count .error {
+			background-color: #f00;
+			border-radius: 50%;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="map">
+		<canvas width="500" height="500" id="grid-space"></canvas>
+	</div>
+	<div id="conduct">
+		<input type="button" value="执行" id="exec">
+		<input type="button" value="Refresh" id="refresh">
+		<select name="letter" id="letter">
+			<option selected="selected">选择一个字母</option>
+			<option value="a">A</option>
+			<option value="b">B</option>
+			<option value="c">C</option>
+		</select>	
+		<select name="speed" id="speed">
+			<option value="slow">慢速</option>
+			<option value="medium">中速</option>
+			<option value="fast">快速</option>
+			<option value="top" selected="selected">极速</option>
+		</select>
+		<input type="button" value="随机修墙" id="randomWall">
+		<div id="command-zone">
+			<textarea id="command"></textarea>
+			<div id="row-count"></div>
+		</div>
+	</div>
+
+	
+
+	<script src="drawLetter.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
