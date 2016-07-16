@@ -103,9 +103,23 @@
 			margin-right: 50px;
 		}
 
+		#explanation {
+			background-color: rgba(220,220,220,.8);
+			line-height: 1.5;
+			text-align: center;
+		}
+		#explanation a{
+			color: 	#483D8B;
+			text-decoration: none;
+		}
+		#explanation a:hover {
+			color: blue;
+		}
 	</style>
 </head>
 <body>
+	<p id="explanation">说明：多叉树的遍历<br>
+	<a href="https://github.com/winjo/IFE/tree/master/task-23" target="_blank">查看源码</a></p>
 	<div class="first">
 		<span>Super</span>
 		<div class="second">
@@ -153,8 +167,6 @@
 		<button id="search">查找</button>
 	</form>
 	
-
-	<script src="tree.js"></script>
-	<script src="main.js"></script>
+	<script src="main.min.js"></script>
 </body>
 </html>

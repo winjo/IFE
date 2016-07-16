@@ -3,9 +3,25 @@
 <head>
 	<meta charset="UTF-8">
 	<title>task-44</title>
-	<link rel="stylesheet" href="album-waterfall.css">
+	<link rel="stylesheet" href="album-waterfall.min.css">
+	<style>
+		#explanation {
+			background-color: rgba(220,220,220,.8);
+			line-height: 1.5;
+			text-align: center;
+		}
+		#explanation a{
+			color: 	#483D8B;
+			text-decoration: none;
+		}
+		#explanation a:hover {
+			color: blue;
+		}
+	</style>
 </head>
 <body>
+	<p id="explanation">说明：运用图片预加载，实现了插件的封装。滚动鼠标，图片逐渐加载。<br>
+	<a href="https://github.com/winjo/IFE/tree/master/task-44" target="_blank">查看源码</a></p>
 	<div id="choises">
 		<button id="add-column">增加一栏</button>
 		<button id="reduce-column">减少一栏</button>
@@ -17,7 +33,6 @@
 		<img src="images/loading.gif" alt="loading">
 	</div>
 
-	<script src="album-waterfall.js"></script>
-	<script src="main.js"></script>
+	<script src="main.min.js"></script>
 </body>
 </html>

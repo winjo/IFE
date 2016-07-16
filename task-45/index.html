@@ -14,9 +14,23 @@
 			float: left;
 		}
 
+		#explanation {
+			background-color: rgba(220,220,220,.8);
+			line-height: 1.5;
+			text-align: center;
+		}
+		#explanation a{
+			color: 	#483D8B;
+			text-decoration: none;
+		}
+		#explanation a:hover {
+			color: blue;
+		}
 	</style>
 </head>
 <body>
+	<p id="explanation">说明：用JS计算图片尺寸，自动调整顺序<br>
+	<a href="https://github.com/winjo/IFE/tree/master/task-45" target="_blank">查看源码</a></p>
 	<div class="album-cask" data-width="600">
 		<img src="../task-44/images/pictures/pic1.jpg" alt="picture">
 		<img src="../task-44/images/pictures/pic2.jpg" alt="picture">
@@ -114,6 +128,6 @@
 		<img src="../task-44/images/pictures/pic30.jpg" alt="picture">
 	</div>
 
-	<script src="album-cask.js"></script>
+	<script src="album-cask.min.js"></script>
 </body>
 </html>

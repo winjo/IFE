@@ -11,18 +11,29 @@
 		canvas {
 			background-color: #fee6ce;
 		}
+		#explanation {
+			float: right;
+			width: 500px;
+			margin-right: 20px;
+			background-color: rgba(220,220,220,.8);
+			line-height: 1.5;
+			text-align: center;
+		}
+		#explanation a{
+			color: 	#483D8B;
+			text-decoration: none;
+		}
+		#explanation a:hover {
+			color: blue;
+		}
 	</style>
 </head>
 <body>
 	
 	<canvas id="game" width="352" height="576">你的浏览器不支持画布</canvas>
+	<p id="explanation">说明：画布绘制地图，A*算法寻路<br>
+	<a href="https://github.com/winjo/IFE/tree/master/task-46" target="_blank">查看源码</a></p>
 
-	<script src="js/data.js"></script>
-	<script src="js/map.js"></script>
-	<script src="js/component.js"></script>
-	<script src="js/astar.js"></script>
-	<script src="js/path.js"></script>
-	<script src="js/render.js"></script>
-	<script src="js/main.js"></script>
+	<script src="main.min.js"></script>
 </body>
 </html>

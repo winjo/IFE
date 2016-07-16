@@ -3,9 +3,25 @@
 <head>
 	<meta charset="UTF-8">
 	<title>task</title>
-	<link rel="stylesheet" href="album-jigsaw.css">
+	<link rel="stylesheet" href="album-jigsaw.min.css">
+	<style>
+		#explanation {
+			background-color: rgba(220,220,220,.8);
+			line-height: 1.5;
+			text-align: center;
+		}
+		#explanation a{
+			color: 	#483D8B;
+			text-decoration: none;
+		}
+		#explanation a:hover {
+			color: blue;
+		}
+	</style>
 </head>
 <body>
+	<p id="explanation">说明：运用了CSS3的一些新特性，为了有最好的效果，建议在Chrome浏览器查看<br>
+	<a href="https://github.com/winjo/IFE/tree/master/task-43"  target="_blank">查看源码</a></p>
 	<div id="#box">
 		<div class="album-jigsaw">
 			<img src="images/pic1.jpg" alt="pic1">
@@ -42,6 +58,6 @@
 		</div>
 	</div>
 
-	<script src="album-jigsaw.js"></script>
+	<script src="album-jigsaw.min.js"></script>
 </body>
 </html>
